@@ -3,7 +3,7 @@
 .nyc
 .build
 package-lock.json
-package.json
+routes/
 
 
 # Logs

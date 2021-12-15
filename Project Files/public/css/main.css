@@ -1,0 +1,124 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+  font-family: "Andada Pro", serif;
+}
+
+/* Navigation */
+.navbar {
+    background-color: hsl(196, 29%, 13%);
+    padding: 1px 20px;
+  }
+  
+  .sign-up {
+    margin-left: 4px;
+  }
+
+.notes {
+    display: flex;
+    height: 100%;
+}
+
+.notes__sidebar {
+    border-right: 2px solid #4A7582;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+    font-family: sans-serif;
+}
+
+@media (max-width: 1350px) {
+    .notes__sidebar {
+        flex-shrink: 1;
+    }
+  }
+
+.notes__add {
+    background: hsl(195, 27%, 23%);
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.notes__add:hover {
+    background: hsl(194, 27%, 40%);
+}
+
+.notes__list-item { 
+    cursor: pointer;
+    background: #eef1f6;
+    margin-bottom: 2px;
+}
+
+.notes__list-item--selected {
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    border: solid 1px hsl(195, 27%, 23%);
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.notes__small-title,
+.notes__small-updated {
+    padding: 5px;
+}
+
+.notes__small-title {
+    font-size: 1.2em;
+}
+
+.notes__small-body {
+    padding: 0 10px;
+}
+
+.notes__small-updated {
+    color: #4b4848;
+    font-style: italic;
+    font-size: small;
+    text-align: right;
+}
+
+.notes__preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.notes__title,
+.notes__body {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.notes__title {
+    border: solid;
+    font-size: 3em;
+    font-weight: bold;
+    background:hsl(55, 100%, 98%) !important;
+    border: 0.2rem solid rgb(259, 253, 237) !important;
+    border-radius: 3px !important;
+}
+
+.notes__body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+}
+
+#footer .footer-bottom {
+    width: 100%;
+    text-align: center;
+    color: hsl(177, 43%, 91%);
+  }
