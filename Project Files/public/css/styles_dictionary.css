@@ -1,0 +1,136 @@
+:root {
+    --box-shadow-color: #9c9c9c;
+  }
+  
+  body {
+    padding: auto;
+    font-family: "Segoe UI";
+    background-color: #e9f5f4;
+    align-items: center;
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: screen-width !important;
+  }
+  
+  section .searchForm h1 {
+    color: rgb(41, 13, 13);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 0px 0px;
+    margin: 40px 0px 15px 0px;
+    font-weight: 500;
+  }
+  
+  section .searchForm input[type="text"] {
+    margin: 20px 10px;
+    padding: 15px 20px;
+    background-color: #ece7e7;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 22px;
+    box-shadow: 2px 2px 8px var(--box-shadow-color);
+    transition: box-shadow 0.5s;
+  }
+  
+  @media (max-width: 750px) {
+     .searchResult{
+      /* padding-left: 1%; */
+      width: 300px    !important;
+  
+    }
+  }
+  section .searchForm input[type="text"]:hover {
+    box-shadow: 5px 5px 10px var(--box-shadow-color);
+  }
+  
+  section .searchForm input[type="text"]:focus {
+    box-shadow: 5px 5px 10px var(--box-shadow-color);
+  }
+  
+  section .searchForm button {
+    margin: 0px 20px;
+    padding: 15px 40px;
+    background-color: hsl(195, 27%, 23%);
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px #a8a8a8;
+    transition: box-shadow 0.5s;
+    outline: none;
+  }
+  
+  section .searchForm button:hover {
+    box-shadow: 5px 5px 15px #aaa;
+    background-color: hsl(194, 22%, 43%);
+  }
+  
+  section .searchForm input[type="reset"] {
+    margin: 0px 0px;
+    padding: 15px 40px;
+    background-color: hsl(195, 27%, 23%);
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px #a8a8a8;
+    transition: box-shadow 0.5s;
+    outline: none;
+  }
+  
+  section .searchForm input[type="reset"]:hover {
+    box-shadow: 5px 5px 15px #aaa;
+    background-color: hsl(194, 22%, 43%);
+  }
+  
+  section .searchResult {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 10px 400px;
+    word-wrap: break-word;
+    max-width: 650px;
+  }
+  
+  section .searchResult div p {
+    font-size: 23px;
+    text-align: left;
+  }
+  /* 
+  .dict-box{
+      max-width: 500px;
+  } */
+  
+  abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+  }
+  
+  #word {
+    color: hsl(195, 27%, 23%);
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #phonetic {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  #definition {
+    margin-top: 0;
+  }
+  
+  #synonyms {
+    display: relative;
+  }
+  

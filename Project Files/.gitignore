@@ -4,6 +4,7 @@
 .build
 package-lock.json
 routes/
+Procfile
 
 
 # Logs

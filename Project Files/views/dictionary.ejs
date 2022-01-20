@@ -1,0 +1,45 @@
+<%- include("header") -%>
+
+    <section>
+      <form action="/dictionary" method="post" class="searchForm">
+        <h1>Word's World</h1>
+        <input type="text" name="word" placeholder="word to search" autocomplete="off" />
+        <button type="submit" id="go">Go</button>
+        <input type="reset" value="reset" onclick="reloadPage()" />
+      </form>
+
+      <div class="searchResult" id="searchResult">
+        <div><abbr title = "Word">
+          <p id="word" class="text-decoration-none"><u><%= word %></u></p></abbr>
+        </div>
+
+        <div><abbr title = "Phonetic">
+            <p id="phonetic" class="fw-bold text-decoration-none"><%= phonetic %></p></abbr>
+        </div>
+
+        <div><abbr title = "Part of Speech">
+            <p id="partOfSpeech" class="text-decoration-none"><i><%= partOfSpeech %></i></p></abbr>
+        </div>
+
+        <div>
+          <p id="definition " class="fw-bold"><%= definition %></p>   
+        </div>
+        <div> <abbr title = "example">
+          <p id="examples" class="text-decoration-none"><%= examples %></p> </abbr>
+        </div>
+
+        <div>
+          <p id="synonyms" class="text-decoration-none">
+            <abbr title="synonyms">
+            <%= synonyms %></p></abbr>
+        </div>
+
+        <div> <abbr title = "antonyms">
+          <p id="antonyms" class="text-decoration-none"><%= antonyms %></p></abbr>
+        </div>
+       
+      </div>
+    </section>
+
+<%- include("footer") -%>
+

@@ -1,0 +1,16 @@
+body {
+  background-color: #c1e6e4 !important;
+}
+
+p {
+  margin: 10px;
+}
+
+.centered {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.card{
+  border-radius:0.50rem;
+}

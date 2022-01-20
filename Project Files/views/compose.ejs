@@ -25,36 +25,44 @@
       </div>
     </nav>
 
-    </head>
-
-    <body>
-      <div class="container"></div>
-      <div class= "content">
-
-        <h1>Home</h1>
-        <p><%= startingContent %></p>
-        
-        <% posts.forEach(function(post) {%>
-            <h1><%= post.title %> </h1>
-            <p><%= (post.content).substring(0, 100)+"............"%>
-                <a href="/posts/<%= post._id %>">Read More</a>
-            </p>
-        <% }) %>
-        
+  </head>
+  <body>
+    <div class= "content">
+    
+      <h1>Compose</h1>
+    
+    
+      <form method="post" action="/compose">
+        <div class="form-group" >
+          <label for="title1">Title</label>
+          <input
+            type="text"
+            name="postTitle"
+            class="form-control"
+            placeholder="Enter Title"
+            autocomplete="off"
+          />
         </div>
+        <div class="form-group">
+          <label for="Post">Post</label>
         
-        <div class="compose">
-            <a href="/compose">
-                <button type="button" class="btn btn-primary compose">Compose</button>
-            </a>
-        </div>
+          <textarea
+              class="form-control"
+              name="postBody"
+              id="exampleFormControlTextarea1"
+              rows="5"
+              autocomplete="off"></textarea>
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Publish</button>
+        </form>
+
     </div>
     
-    </body>
-    <div class="footer-padding"></div>
-      <div class="footer">
-        <p class="footer-text">Made with ❤️ by Noob Coders</p>
-      </div>
+  </body>
+  <div class="footer-padding"></div>
+    <div class="footer">
+      <p class="footer-text">Made with ❤️ by Noob Coders</p>
     </div>
-  
+  </div>
 </html>

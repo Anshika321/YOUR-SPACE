@@ -17,6 +17,11 @@ body{
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
+@media (max-width: 726px){
+	.main{
+		zoom:1.3;
+	}
+}
 #chk{
 	display: none;
 }
