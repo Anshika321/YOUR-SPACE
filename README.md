@@ -1,7 +1,6 @@
 
  <h1 align="center">YOUR SPACE</h1>
-<p align = "center" ><img width="200" src="  
-https://github.com/Anshika321/YOUR-SPACE/blob/main/Project%20Files/public/images/logo.png?raw=true"> </p>
+<p align = "center" ><img width="200" src="https://github.com/Anshika321/YOUR-SPACE/blob/main/Project%20Files/public/images/logo.png?raw=true"> </p>
 
 
 ##           Team-Name:  <u>*NOOB CODERS*</u>
