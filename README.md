@@ -139,8 +139,7 @@ npm install
 
 *DETAILED PROJECT CHART* 
 
-![Our CHART](https://www.linkpicture.com/q/Screenshot-63_4.png)
----
+
 ![Homescreen](https://www.linkpicture.com/q/Screenshot-from-2022-01-20-22-59-24.png)
 ---
 ---
