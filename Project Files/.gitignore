@@ -2,8 +2,6 @@
 .env
 .nyc
 .build
-package-lock.json
-routes/
 Procfile
 
 
@@ -125,3 +123,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
